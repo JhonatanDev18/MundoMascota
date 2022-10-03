@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.crystal.mundomascota.adapter.MascotasRecyclerViewAdapter;
 import com.crystal.mundomascota.clases.Mascota;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     MascotasRecyclerViewAdapter adaptador;
     List<Mascota> listaMascotas;
     List<Mascota> listaMascotasFavoritas;
+    FloatingActionButton fabSubirFotoMascota;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,11 +75,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvTituloCantHard = findViewById(R.id.tvTituloCantHard);
         rvMascotas = findViewById(R.id.rvMascotas);
         rvMascotas.setLayoutManager(new LinearLayoutManager(this));
+        fabSubirFotoMascota = findViewById(R.id.fabSubirFotoMascota);
     }
 
     private void eventos() {
         ivPatitaActionBar.setOnClickListener(this);
         tvTituloCantHard.setOnClickListener(this);
+        fabSubirFotoMascota.setOnClickListener(this);
     }
 
     @Override
@@ -86,6 +90,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "Patita principal", Toast.LENGTH_SHORT).show();
         }else if(v.getId() == R.id.tvTituloCantHard){
             irMascotasFavoritas();
+        }else if(v.getId() == R.id.fabSubirFotoMascota){
+            //Aca se puede implementar el metodo para abrir la camara.
+            Toast.makeText(this, "Abriendo camara...", Toast.LENGTH_SHORT).show();
         }
     }
 
