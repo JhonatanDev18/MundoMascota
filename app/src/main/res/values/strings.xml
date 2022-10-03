@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mundo Mascota</string>
+    <string name="titulo_actionbar_hard">Favoritos</string>
+    <string name="menu_perrito">Menú perrito</string>
+    <string name="otromenu_perrito">Otro menú perrito</string>
+    <string name="texto_titulohard">5</string>
+    <string name="nombre_mascota_1">Odie</string>
+    <string name="cant_huesolike_1">231</string>
+    <string name="mascotasFavoritas">MascotasFavoritas</string>
+</resources>

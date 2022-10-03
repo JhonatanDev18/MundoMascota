@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--ACTION BAR-->
+    <dimen name="elevacion_actionbar">4dp</dimen>
+    <dimen name="tamaño_texto_titulo_actionbar">18sp</dimen>
+    <dimen name="tamaño_texto_tituloCandHard_actionbar">18sp</dimen>
+    <dimen name="width_patita_actionbar">34dp</dimen>
+    <dimen name="height_patita_actionbar">34dp</dimen>
+    <dimen name="width_estrella_actionbar">34dp</dimen>
+    <dimen name="height_estrella_actionbar">34dp</dimen>
+    <dimen name="width_foto_mascota">120dp</dimen>
+    <dimen name="height_foto_mascota">120dp</dimen>
+    <dimen name="width_foto_huesolike">40dp</dimen>
+    <dimen name="height_foto_huesolike">40dp</dimen>
+</resources>
