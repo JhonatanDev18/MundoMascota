@@ -8,9 +8,14 @@
         app:showAsAction="always">
         <menu>
             <item
-                android:id="@+id/mItemMenuPerrito"
-                android:icon="@drawable/icon_patita"
-                android:title="@string/menu_perrito" />
+                android:id="@+id/mItemMenuContacto"
+                android:icon="@mipmap/icon_contacto"
+                android:title="@string/menu_contacto" />
+
+            <item
+                android:id="@+id/mItemMenuAcercaDe"
+                android:icon="@mipmap/icon_acercade"
+                android:title="@string/menu_acercade"/>
         </menu>
     </item>
 

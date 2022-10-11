@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.crystal.mundomascota.adapter.MascotasRecyclerViewAdapter;
 import com.crystal.mundomascota.clases.Mascota;
+import com.crystal.mundomascota.common.Utilidades;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +33,7 @@ public class MascotasHardcodeadasActivity extends AppCompatActivity implements V
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mascotas_hardcodeadas);
+        Utilidades.ocultarBarraEstado(getWindow());
 
         inicializar();
         eventos();
