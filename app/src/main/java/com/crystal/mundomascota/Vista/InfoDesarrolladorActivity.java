@@ -1,4 +1,4 @@
-package com.crystal.mundomascota;
+package com.crystal.mundomascota.Vista;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -6,7 +6,8 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.crystal.mundomascota.common.Utilidades;
+import com.crystal.mundomascota.R;
+import com.crystal.mundomascota.Modelo.common.Utilidades;
 
 import java.util.Objects;
 

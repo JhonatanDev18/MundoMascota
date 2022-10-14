@@ -1,4 +1,4 @@
-package com.crystal.mundomascota.adapter;
+package com.crystal.mundomascota.Vista.adapter;
 
 
 import android.annotation.SuppressLint;
@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.jetbrains.annotations.NotNull;
 import com.crystal.mundomascota.R;
-import com.crystal.mundomascota.clases.Mascota;
+import com.crystal.mundomascota.Modelo.clases.Mascota;
 
 import java.util.List;
 

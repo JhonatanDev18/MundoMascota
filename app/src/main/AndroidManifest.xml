@@ -20,15 +20,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
-            android:name=".InfoDesarrolladorActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".Vista.InfoDesarrolladorActivity"
+            android:parentActivityName=".Vista.MainActivity"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Vista.MainActivity" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Vista.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,16 +37,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MascotasHardcodeadasActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".Vista.MascotasFavoritasActivity"
+            android:parentActivityName=".Vista.MainActivity"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Vista.MainActivity" />
         </activity>
         <activity
-            android:name=".EnviarComentarioActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".Vista.EnviarComentarioActivity"
+            android:parentActivityName=".Vista.MainActivity"
             android:screenOrientation="portrait"></activity>
     </application>
 

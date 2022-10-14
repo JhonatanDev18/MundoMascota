@@ -1,4 +1,4 @@
-package com.crystal.mundomascota.fragment;
+package com.crystal.mundomascota.Vista.fragment;
 
 import android.os.Bundle;
 
@@ -14,9 +14,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.crystal.mundomascota.R;
-import com.crystal.mundomascota.adapter.MascotasRecyclerViewAdapter;
-import com.crystal.mundomascota.adapter.PerfilMascotaRecyclerViewAdapter;
-import com.crystal.mundomascota.clases.Mascota;
+import com.crystal.mundomascota.Vista.adapter.PerfilMascotaRecyclerViewAdapter;
+import com.crystal.mundomascota.Modelo.clases.Mascota;
 
 import org.jetbrains.annotations.NotNull;
 

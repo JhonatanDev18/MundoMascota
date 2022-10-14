@@ -1,4 +1,4 @@
-package com.crystal.mundomascota.adapter;
+package com.crystal.mundomascota.Vista.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

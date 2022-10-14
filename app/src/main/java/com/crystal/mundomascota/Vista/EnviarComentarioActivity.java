@@ -1,18 +1,17 @@
-package com.crystal.mundomascota;
+package com.crystal.mundomascota.Vista;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.ActivityCompat;
 
-import android.Manifest;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.crystal.mundomascota.common.Utilidades;
+import com.crystal.mundomascota.R;
+import com.crystal.mundomascota.Modelo.common.Utilidades;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Objects;
@@ -20,10 +19,8 @@ import java.util.Properties;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
-import javax.mail.NoSuchProviderException;
 import javax.mail.Session;
 import javax.mail.Transport;
-import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 

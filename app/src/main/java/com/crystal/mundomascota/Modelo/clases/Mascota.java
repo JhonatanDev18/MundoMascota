@@ -1,4 +1,4 @@
-package com.crystal.mundomascota.clases;
+package com.crystal.mundomascota.Modelo.clases;
 
 import java.io.Serializable;
 

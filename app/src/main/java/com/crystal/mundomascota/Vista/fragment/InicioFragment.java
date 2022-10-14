@@ -1,5 +1,6 @@
-package com.crystal.mundomascota.fragment;
+package com.crystal.mundomascota.Vista.fragment;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,23 +13,26 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.crystal.mundomascota.Interface.IMainActivity;
+import com.crystal.mundomascota.Modelo.SQLite.entity.MascotasEntity;
 import com.crystal.mundomascota.R;
-import com.crystal.mundomascota.adapter.MascotasRecyclerViewAdapter;
-import com.crystal.mundomascota.clases.Mascota;
+import com.crystal.mundomascota.Vista.adapter.MascotasRecyclerViewAdapter;
+import com.crystal.mundomascota.Modelo.clases.Mascota;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class InicioFragment extends Fragment {
     RecyclerView rvMascotas;
     MascotasRecyclerViewAdapter adaptador;
-    List<Mascota> listaMascotas;
+    List<MascotasEntity> listaMascotas;
     View view;
+    private IMainActivity.Presentador presentador;
 
-    public InicioFragment(List<Mascota> listaMascotas){
+    public InicioFragment(List<MascotasEntity> listaMascotas, IMainActivity.Presentador presentador){
         this.listaMascotas = listaMascotas;
+        this.presentador = presentador;
     }
 
     @Override
@@ -42,7 +46,7 @@ public class InicioFragment extends Fragment {
         rvMascotas = view.findViewById(R.id.rvMascotas);
         rvMascotas.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        adaptador = new MascotasRecyclerViewAdapter(listaMascotas);
+        adaptador = new MascotasRecyclerViewAdapter(listaMascotas, presentador);
         rvMascotas.setAdapter(adaptador);
     }
 
